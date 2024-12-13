@@ -1,0 +1,38 @@
+.card{
+    position:relative;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(177, 172, 172);
+    margin: 50px;
+    overflow: hidden;
+    text-align: inline-block;
+}
+.card:hover{
+    transform: translateY(-5%);
+}
+.oblique1{
+    position: absolute;
+    top:13.5%;
+    right: -4.5%;
+    width: 28%;
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transform: rotate(45deg);
+    justify-content: center;
+    transform-origin: top right;
+    border-radius: 5px 5px 0 0;
+    background-color: chocolate;
+}
+.debut{
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    height: 100px;
+}

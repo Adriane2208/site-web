@@ -1,0 +1,338 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.header-first{
+    background-color: rgb(19, 94, 242);
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+}
+h1{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    border-left: solid rgba(255, 255, 255, 0.397) 1px;
+    padding: 12px 10px;
+}
+nav a span{
+    margin-left: 5px;
+}
+nav a i{
+    font-size: 14px;
+}
+.social a:first-child{
+    border-left: solid rgba(255, 255, 255, 0.397) 1px;
+    padding: 12px 0 12px 10px;
+}
+.social a{
+    border-left: none;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 15px;
+}
+/****head second*******************************************/
+
+.header-second{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    gap: 25px;
+    max-width: 90%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+.header-second img{
+    width: 122px;
+    margin-left: -10px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation .visible-a{
+    text-transform: uppercase;
+    font-size: 11px;
+    color: rgb(41, 41, 41);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s ease-in;
+}
+.navigation .visible-a:hover{
+    color: rgb(19, 94, 242);
+}
+.navigation .visible-a .fa-chevron-down{
+    font-size: 5px;
+}
+.deroulement{
+    position: relative;
+}
+.toggle{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 8px 8px 18px -15px #00000091;
+    width: 350px;
+    padding: 15px 30px;
+    gap: 10px;
+    margin-top: 30px;
+    background-color: white;
+}
+.toggle a{
+    color: rgb(19, 94, 242);
+    font-weight: 600;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 16px;
+}
+.ecrite{
+    display: none;
+}
+.oral{
+    display: none;
+    width: 310px;
+}
+/*----------------------main--------------------*/
+main{
+    padding-top: 30px;
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 70px;
+}
+.card-first{
+    height: 150px;
+    background: url(images/reception2.jpg) center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.card-first::before{
+    content: '';
+    background: linear-gradient(to right,rgba(0, 149, 186, 0.808),rgba(108, 80, 167, 0.767));
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.card-first .infos{
+    color: white;
+    width: 35%;
+    text-align: center;
+    line-height: 30px;
+    height: 120px;
+    z-index: 2;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-first .infos p:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+.card-first .infos p:last-child{
+    font-weight: 600;
+}
+.card-second{
+    background-color: rgb(68, 68, 68);
+    display: flex;
+}
+.card-second a{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    padding: 15px 12px;
+    font-size: 15px;
+    transition: 0.3s ease-in;
+}
+.card-second a:hover{
+    background-color: rgb(41, 41, 41);
+}
+h2{
+    text-align: center;
+    color: rgb(26, 37, 56);
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+.button{
+    text-align: center;
+    color: white;
+    width: 55%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 17px 20px;
+    background-color: rgb(35,104,242);
+    font-size: 20px;
+    transition: 0.4s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.button .fa-arrow-right{
+    font-size: 15px;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+/***********************footer**************************/
+footer{
+    margin-top: 51px;
+    padding: auto;
+    color: white;
+}
+.footer-first{
+   background: linear-gradient(to bottom,rgb(21,95,242),rgb(41,108,242));
+}
+
+.contain{
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.pages{
+    width: 350px;
+    margin-right: 70px;
+}
+.compte{
+    width: 380px;
+    margin-right: 20px;
+}
+.parametre{
+    background-color: rgb(19,94,242);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 600;
+}
+.parametre a{
+    color: white;
+}
+.blocks{
+    margin-right: 30px;
+}
+.pages h3{
+    letter-spacing: 3px;
+}
+.options a, .suite a{
+    color: white;
+    border-bottom: solid 1px white;
+    padding:  15px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.suite{
+    width: 90%;
+}
+.options a:last-child,.suite a:last-child{
+    border-bottom: none;
+}
+.footer-first .options, .parametre,.suite{
+    display: flex;
+    flex-direction: column;
+}
+.propos p{
+    width: 300px;
+    font-size: 15px;
+    line-height: 25px;
+}
+h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.social2{
+    margin-bottom: 20px;
+}
+.links-socials-network{
+    margin: 25px 0px;
+}
+.links-socials-network a{
+    padding: 10px 15px;
+    border-radius: 200px;
+    margin: 0 2px;
+    font-size: 20px;
+    color: white;
+}
+.paiements{
+    display: flex;
+    flex-direction: column;
+}
+.paiements a{
+    color: black;
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    transition: 0.3s ease-in;
+}
+.paiements a:hover{
+    transform: scale(0.9);
+}
+
+
+.footer-second{
+    display: flex;
+    color: rgba(0, 0, 0, 0.623);
+    align-items: center;
+    padding: 10px 0px;
+    font-size: 11px;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.footer-second a{
+    color: #141414d7;
+    font-weight: 600;
+}
