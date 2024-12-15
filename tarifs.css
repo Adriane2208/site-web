@@ -1,22 +1,42 @@
-.card{
-    position:relative;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card {
+    position: relative;
     width: 400px;
     height: 600px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgb(177, 172, 172);
-    margin: 50px;
+    margin: 10px;
     overflow: hidden;
-    text-align: inline-block;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-5%);
 }
-.oblique1{
+
+.oblique1 {
     position: absolute;
-    top:13.5%;
+    top: 13.5%;
     right: -4.5%;
     width: 28%;
-    color:black;
+    color: black;
     font-size: 14px;
     font-weight: bold;
     padding: 5px 15px;
@@ -26,13 +46,42 @@
     border-radius: 5px 5px 0 0;
     background-color: chocolate;
 }
-.debut{
+
+.debut {
     border-radius: 10px 10px 0 0;
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
     background-color: blue;
     color: white;
     height: 100px;
+}
+
+.prix {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.contenu p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
 }
